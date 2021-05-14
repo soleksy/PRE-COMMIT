@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service
 class AuthService {
     private val loginForm: LoginForm = LoginForm()
 
+    
     fun login(login: String, password: String): Boolean {
         if (login.isNullOrEmpty() || password.isNullOrEmpty()) {
             return false
